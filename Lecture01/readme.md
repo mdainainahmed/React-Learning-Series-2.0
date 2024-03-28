@@ -4,6 +4,7 @@
 Basic important Terminologies & Questions before starting React.
 
 
+
 ## Terminologies
 
 ***1. Emmit***
@@ -12,7 +13,10 @@ Basic important Terminologies & Questions before starting React.
 ***2. CDNs : Content Delivery Networks***
 - Is a network of servers that are spread out geographically to help improve web content delivery.
 - When a user visits a website, data from that website's server has to travel across the internet to reach the user's computer. If the user is located far from that server, it will take a long time to load a large file, such as a video or website image. CDNs store website content on servers that are geographically closer to the users, so that the content can reach their computers much faster.
-- CDNs play a crucial role in optimizing website performance, scalability, security, and user experience, making them an essential component of modern web infrastructure. 
+- CDNs play a crucial role in optimizing website performance, scalability, security, and user experience, making them an essential component of modern web infrastructure.
+
+
+
 ## Questions
 
 ***1. What is "crossorigin" in script tag?***
@@ -22,16 +26,21 @@ Basic important Terminologies & Questions before starting React.
 - **Preventing Security Vulnerabilities:** Without proper CORS handling, loading resources from other origins can pose security risks, such as allowing malicious scripts to access sensitive data on the web page. The crossorigin attribute helps mitigate these risks by enforcing restrictions on cross-origin requests, ensuring that only trusted resources are loaded and executed.
 - **Avoiding Cross-Origin Errors:** When attempting to load resources from different origins without proper CORS handling, browsers may generate errors or block the requests altogether. By using the crossorigin attribute correctly, you can prevent these errors and ensure that resources are loaded successfully across different origins.
 
+
 ***2. What is diference between React and ReactDOM?***
 
 - **React** is core library, primarily concerned with defining react components, managing state, and rendering UI elements. 
 - **ReactDOM** is a package that provides the integration between React and the DOM (Document Object Model). It contains methods for performing DOM operations such as rendering React components to the DOM and for interacting with the DOM.
 
+
 ***3. What is difference between react.development.js and react.production.js files via CDN?***
+
 - **react.development.js:** This file is intended for development environments. It includes additional debugging information, such as warnings and error messages with specific line numbers and helpful stack traces. It is larger in size but provides more detailed feedback, making it suitable for debugging and development purposes.
 - **react.production.js:**  This file is optimized for production environments. It has been minified and stripped of unnecessary code, including debugging information. It is smaller in size and more efficient for deployment in production. However, it lacks the detailed error messages and debugging capabilities present in the development version.
 
+
 ***4. What is async and defer?***
+
 - ***'async'*** and ***'defer'*** are attributes used in HTML script tags to control when and how scripts are loaded and executed.
 - **'async' Attribute:**
   - When you include the async attribute in a script tag (***<script async src="script.js"></script>***), it tells the browser to fetch the script asynchronously while continuing to parse the HTML document. 
